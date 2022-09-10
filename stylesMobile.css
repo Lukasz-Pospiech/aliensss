@@ -1,0 +1,621 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+
+
+/* MENU */
+#smallFace {
+    position: fixed;
+    height: calc(var(--vh, 1vh) * 12);
+    top: 2vw;
+    right: 2vw;
+    z-index: 300;
+}
+
+#menuContainer {
+    display: none;
+    background-image: url("cosmos1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 290;
+    opacity: 0; 
+    transition: opacity 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#headcut1 {
+    width: 100vw;
+    margin-bottom: calc(var(--vh, 1vh) * 100);
+    z-index: 293;
+}
+
+.headcut1Animation {
+    animation-name: headcut1Show;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headcut1Show {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 100);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.3);
+    }
+}  
+
+.headcut1AnimationReverse {
+    animation-name: headcut1ShowReverse;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+@keyframes headcut1ShowReverse {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 100);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.4);
+    }
+}  
+
+
+#headcut2 {
+    width: 100vw;
+    margin-bottom: calc(var(--vh, 1vh) * 100);
+    z-index: 293;
+}
+
+.headcut2Animation {
+    animation-name: headcut2Show;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headcut2Show {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 100);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.4);
+    }
+}  
+
+.headcut2AnimationReverse {
+    animation-name: headcut2ShowReverse;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+@keyframes headcut2ShowReverse {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 100);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.4);
+    }
+}  
+
+
+#headcut3 {
+    width: 100vw;
+    margin-bottom: calc(var(--vh, 1vh) * 100);
+    z-index: 293;
+}
+
+.headcut3Animation {
+    animation-name: headcut3Show;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headcut3Show {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 100);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.4);
+    }
+}  
+
+
+.headcut3AnimationReverse {
+    animation-name: headcut3ShowReverse;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+@keyframes headcut3ShowReverse {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 100);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.4);
+    }
+}  
+
+
+#headcut4 {
+    width: 100vw;
+    margin-bottom: calc(var(--vh, 1vh) * 400);
+    z-index: 293;
+}
+
+.headcut4Animation {
+    animation-name: headcut4Show;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headcut4Show {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 400);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.4);
+    }
+}  
+
+.headcut4AnimationReverse {
+    animation-name: headcut4ShowReverse;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+@keyframes headcut4ShowReverse {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * 400);
+    }
+    100% {
+        margin-bottom: calc(var(--vh, 1vh) * -0.4);
+    }
+}  
+
+
+#brain {
+    width: 65vw;
+    position: absolute;
+    bottom: calc(var(--vh, 1vh) * -70);
+    left: 19vw;
+    z-index: 291;
+}
+
+.brainAnimation {
+    animation-name: brainShow;
+    animation-duration: 3.7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    z-index: 99;
+}
+
+@keyframes brainShow {
+    0% {
+        bottom: calc(var(--vh, 1vh) * -70);
+    }
+    100% {
+        bottom: calc(var(--vh, 1vh) * 44);
+    }
+}  
+
+
+.brainAnimationReverse {
+    animation-name: brainShowReverse;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    z-index: 99;
+    animation-direction: reverse;
+}
+
+@keyframes brainShowReverse {
+    0% {
+        bottom: calc(var(--vh, 1vh) * -70);
+    }
+    100% {
+        bottom: calc(var(--vh, 1vh) * 44);
+    }
+}  
+
+
+#headcut5 {
+    width: 100vw;
+    margin-bottom: calc(var(--vh, 1vh) * -160);
+    z-index: 292;
+}
+
+.headcut5Animation {
+    animation-name: headcut5Show;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headcut5Show {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * -160);
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}  
+
+
+.headcut5AnimationReverse {
+    animation-name: headcut5ShowReverse;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    animation-direction: reverse;
+}
+
+@keyframes headcut5ShowReverse {
+    0% {
+        margin-bottom: calc(var(--vh, 1vh) * -160);
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}  
+
+
+
+
+
+/* INTRO */
+#etUfoContainer {
+    background-image: url("cosmos4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 990;
+}
+
+#etDIV {
+    position: absolute;
+    left: 10vw;
+    bottom: -2vw;
+    transition: opacity 0.6s;
+    z-index: 991;
+}
+
+#etPic {
+    width: 80vw; 
+
+}
+
+#ring {
+    width: 27vw;
+    height: 27vw;
+    position: absolute;
+    left: 22vw;
+    bottom: 25vw;
+    opacity: 0.3;
+    border-radius: 20vw;
+    opacity: 0; 
+    transition: opacity 1s;
+}
+
+#ufo {
+    width: 20vw;
+    position: absolute;
+    left: 40vw;
+    bottom: calc(var(--vh, 1vh) * 150);
+    z-index: 992;
+}
+
+.ufoAnimation {
+    animation-name: ufoShow;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ufoShow {
+    0% {
+        left: 40vw;
+        bottom: calc(var(--vh, 1vh) * 170);
+        width: 20vw;
+    }
+    35% {
+        left: 15vw;
+        bottom: 0;
+        width: 70vw;
+    }
+    45% {
+        left: 15vw;
+        bottom: 0;
+        width: 70vw;
+    }
+    55% {
+        left: 0;
+        bottom: calc(var(--vh, 1vh) * 20);
+        width: 70vw;
+    }
+    75% {
+        left: 30vw;
+        bottom: calc(var(--vh, 1vh) * 30);
+        width: 70vw;
+    }
+    85% {
+        left: 0vw;
+        bottom: calc(var(--vh, 1vh) * 46);
+        width: 70vw;
+    }
+    90% {
+        left: 15vw;
+        bottom: calc(var(--vh, 1vh) * 46);
+        width: 70vw;
+    }
+    100% {
+        left: 15vw;
+        bottom: calc(var(--vh, 1vh) * -70);
+        width: 70vw;
+    }
+} 
+
+#et2 {
+    width: 45vw; 
+    position: absolute;
+    left: -10vw;
+    bottom: calc(var(--vh, 1vh) * -50);
+    rotate: 10deg;
+}
+
+.et2Animation {
+    animation-name: et2Show;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes et2Show {
+    0% {
+        left: -20vw;
+        bottom: calc(var(--vh, 1vh) * -50);
+    }
+    50% {
+        left: 0;
+        bottom: calc(var(--vh, 1vh) * -3);
+        rotate: 5deg;
+    }
+    80% {
+        left: 0;
+        bottom: calc(var(--vh, 1vh) * -8);
+        rotate: -3deg;
+    }
+    100% {
+        left: -10vw;
+        bottom: calc(var(--vh, 1vh) * -50);
+    }
+}
+
+
+
+#container {
+    display: none;
+    background-image: url("cosmos4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 260;
+}
+
+
+#greenplanet {
+    width: 50vw;
+    position: absolute;
+    left: 130vw;
+    top: calc(var(--vh, 1vh) * 5);
+}
+
+.greenplanetAnimation {
+    animation-name: greenplanetShow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes greenplanetShow {
+    0% {
+        left: 130vw;
+        top: calc(var(--vh, 1vh) * 5);
+    }
+    100% {
+        left: 36vw;
+        top: calc(var(--vh, 1vh) * 5);
+    }
+} 
+
+
+
+@font-face {
+    font-family: oxanium;
+    src: url(oxanium.ttf);
+}
+
+#xartext1DIV {
+    position: absolute;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 35);
+    top: calc(var(--vh, 1vh) * 35);
+    font-size: 5.5vw;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5vw;
+    color: white;
+    line-height: 1.4;
+    /* background-color: rgb(170, 139, 97); */
+    font-family: oxanium;
+    letter-spacing: 1px;
+}
+
+#xartext2DIV {
+    position: absolute;
+    width: 56vw;
+    height: calc(var(--vh, 1vh) * 30);
+    bottom: 0;
+    left: 44vw;
+    font-size: 5.5vw;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5vw;
+    color: white;
+    line-height: 1.4;
+    /* background-color: rgb(40, 32, 22); */
+    overflow: hidden;
+    font-family: oxanium;
+    letter-spacing: 1px;
+}
+
+/* #xartext1DIV > p {
+    margin-top: 0;
+}
+
+#xartext2DIV > p {
+    margin-top: 0;
+} */
+
+
+
+#xar {
+    width: 30vw;
+    position: absolute; 
+    left: 2vw;
+    right: 2vw;
+    bottom: calc(var(--vh, 1vh) * -50);
+}
+
+.xarAnimation {
+    animation-name: xarShow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes xarShow {
+    0% {
+        bottom: calc(var(--vh, 1vh) * -50);
+        
+    }
+    100% {
+        bottom: calc(var(--vh, 1vh) * 0);
+    }
+}   
+
+#forward {
+    width: 20vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 75vw;
+    z-index: 800;
+}
+
+#back {
+    width: 20vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 50vw;
+    z-index: 800;
+}
+
+span {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+#explosionContainer {
+    display: none;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: 900;
+}
+
+
+#explosion {
+    /* display: none;  */
+    width: 100vw;
+    /* height: calc(var(--vh, 1vh) * 100); */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#crewDIV {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    z-index: 1100;
+}
+
+.crewPics {
+    width: 100vw;
+    margin-bottom: -6vw;
+}
+
+#exitCrew {
+    width: 30vw;
+    position: fixed;
+    left: 3vw;
+    bottom: 0; 
+}
